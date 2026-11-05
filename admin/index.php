@@ -1,4 +1,10 @@
 <?php
+// Incluir el guardián para proteger la ruta y validar que sea administrador
+require_once '../config/auth_guard.php';
+verificarAutenticacion('admin');
+?>
+
+<?php
 require_once '../config/conexion.php';
 
 // Consulta segura para obtener los productos
