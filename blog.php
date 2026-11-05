@@ -1,52 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascotas Center - Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">🐾 Mascotas Center</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="perros.html">Perros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gatos.html">Gatos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito 🛒</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Mi Cuenta</a></li>
-                    </ul>
+<?php
+$titulo_pagina = "Blog - Mascotas Center";
+require_once 'includes/header.php';
+?>
+
+<main class="container my-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold">Blog y Consejos</h1>
+        <p class="lead text-muted">Artículos de interés para el cuidado y la salud de tus mascotas.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Cómo elegir el mejor alimento para tu perro</h5>
+                    <p class="text-muted small">Publicado el 15 de Octubre, 2026</p>
+                    <p class="card-text">Descubre qué ingredientes priorizar según la edad, tamaño y nivel de actividad física de tu canino.</p>
+                    <a href="#" class="btn btn-outline-dark btn-sm">Leer más</a>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <main class="container my-5">
-        <h1 class="mb-4">Blog de Cuidados Animales</h1>
-        <article class="card mb-4 p-4 shadow-sm">
-            <h2>¿Cómo elegir el mejor alimento balanceado para tu perro?</h2>
-            <p class="text-muted">Publicado por Mascotas Center</p>
-            <p>Es indispensable revisar los primeros 3 ingredientes de la tabla nutricional. Asegúrate de que la fuente primaria sea proteína de calidad...</p>
-        </article>
-    </main>
-
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-1">🐾 Mascotas Center — Salta Capital, Argentina</p>
-            <small class="text-muted">© 2026 Todos los derechos reservados.</small>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Cuidados esenciales para gatos en época de calor</h5>
+                    <p class="text-muted small">Publicado el 20 de Octubre, 2026</p>
+                    <p class="card-text">Consejos prácticos para mantener a tu felino bien hidratado y fresco durante los días de altas temperaturas.</p>
+                    <a href="#" class="btn btn-outline-dark btn-sm">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<?php require_once 'includes/footer.php'; ?>

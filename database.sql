@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS mascotas_db;
+USE mascotas_db;
+
+CREATE TABLE IF NOT EXISTS productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    descripcion TEXT NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
